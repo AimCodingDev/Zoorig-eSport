@@ -3,10 +3,19 @@
 
 $color_one: #2767b1;
 $color_two: #3052a4;
+$background_color_header: #34495e;
+$color_footer: rgba(25, 1, 41, 0.97);
 $font_family: sans-serif;
-$nav_heigth: 80px;
+$nav_heigth: 100px;
+$footer_heigth: 120px;
 
 html, body {
   margin: 0;
   padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font_family;
 }
