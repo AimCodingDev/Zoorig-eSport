@@ -9,6 +9,8 @@ $backgroundColorHeader: #34495e;
 $backgroundColorFooter: rgba(25, 1, 41, 0.97);
 $defaultFontFamily: sans-serif;
 $defaultFontColor: white;
+$defaultFontSize: 22px;
+$font_size: 18px;
 $defaultNavbarHeight: 100px;
 $defaultFooterHeigth: 120px;
 
@@ -20,12 +22,17 @@ $defaultFooterHeigth: 120px;
 
 /** Text-decoration Project**/
 
+.backgroundImage {
+  background: url("~src/assets/image/new_logo_2.jpg") no-repeat 0 center fixed;
+  background-size: cover;
+}
+
 .textShadow {
-  text-shadow: 0 0 15px black;
+  text-shadow: 0 0 15px whitesmoke;
 }
 
 .boxShadow {
-  box-shadow: 0 0 15px black;
+  box-shadow: 0 0 15px whitesmoke;
 }
 
 @media screen and (max-width: 1000px) {

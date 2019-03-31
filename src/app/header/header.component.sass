@@ -1,0 +1,64 @@
+@import "~src/styles"
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css")
+
+$item_heigth: calc(#{$defaultNavbarHeight} - 10px)
+
+*
+  font-size: $font_size
+
+  .head
+    height: $defaultNavbarHeight
+    background-color: $backgroundColorHeader
+    padding: 0 20px
+    color: $defaultFontColor
+
+    .logo
+      height: $defaultNavbarHeight
+      float: left
+
+      img
+        height: $item_heigth
+        cursor: pointer
+        border-radius: 30%
+        padding: 5px
+
+    .menu
+      float: right
+      line-height: $defaultNavbarHeight
+
+      a
+        color: $defaultFontColor
+        text-transform: uppercase
+        text-decoration: none
+        padding: 0 10px
+
+      a:hover
+        color: $backgroundColorOne
+
+    .show-menu-btn, .hide-menu-btn
+      transition: 0.4s
+      font-size: $defaultFontSize
+      cursor: pointer
+      display: none
+
+    .show-menu-btn
+      float: right
+
+      i
+        line-height: $defaultNavbarHeight
+
+    .show-menu-btn:hover,
+    .hide-menu-btn:hover
+      color: $backgroundColorOne
+
+    @media screen and (max-width: 900px)
+      .show-menu-btn, .hide-menu-btn
+        display: block
+
+      .menu
+        display: none
+
+    #checkbox
+      position: absolute
+      visibility: hidden
+      z-index: -1111

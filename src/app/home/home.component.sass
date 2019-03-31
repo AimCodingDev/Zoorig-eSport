@@ -1,0 +1,91 @@
+@import "~src/styles"
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css")
+
+#main
+  position: relative
+  height: calc(100vh - #{$defaultNavbarHeight})
+  overflow: hidden
+  box-sizing: border-box
+
+  #sliders
+    position: relative
+    width: 100vw
+    height: 100%
+    overflow: hidden
+
+    img
+      height: 100%
+      width: 100%
+
+    .slider_img
+      position: absolute
+      top: 0
+      left: 0
+
+    .class_1
+      animation: Klasse_1 infinite 20s
+    .class_2
+      animation: Klasse_2 infinite 20s
+    .class_3
+      animation: Klasse_3 infinite 20s
+    .class_4
+      animation: Klasse_4 infinite 20s
+
+    @keyframes Klasse_1
+      0%
+        opacity: 0
+      5%
+        opacity: 1
+      25%
+        opacity: 1
+      30%
+        opacity: 0
+      100%
+        opacity: 0
+
+    @keyframes Klasse_2
+      0%
+        opacity: 0
+      25%
+        opacity: 0
+      30%
+        opacity: 1
+      50%
+        opacity: 1
+      55%
+        opacity: 0
+      100%
+        opacity: 0
+
+    @keyframes Klasse_3
+      0%
+        opacity: 0
+      50%
+        opacity: 0
+      55%
+        opacity: 1
+      75%
+        opacity: 1
+      80%
+        opacity: 0
+      100%
+        opacity: 0
+
+    @keyframes Klasse_4
+      0%
+        opacity: 0
+      75%
+        opacity: 0
+      80%
+        opacity: 1
+      100%
+        opacity: 1
+      105%
+        opacity: 0
+
+  #second
+    margin: 0
+    padding: 0
+    display: flex
+    height: 100vh
+    width: 100vh

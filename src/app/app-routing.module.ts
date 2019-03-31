@@ -9,11 +9,16 @@ import {FifaComponent} from './games/fifa/fifa.component';
 import {SuperSmashBrosComponent} from './games/super-smash-bros/super-smash-bros.component';
 import {FortniteComponent} from './games/fortnite/fortnite.component';
 import {GameComponent} from './games/game/game.component';
+import {TwitterComponent} from './about-us/feeds/twitter/twitter.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full' },
   {path: '', component: HomeComponent},
-  {path: 'about-us', component: AboutUsComponent},
+  {path: 'about-us',
+    component: AboutUsComponent,
+    children: [
+      {path: 'twitter', component: TwitterComponent},
+    ]},
   {path: 'games',
     component: GamesComponent,
     children: [

@@ -17,6 +17,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { GameComponent } from './games/game/game.component';
 import { MainComponent } from './about-us/main/main.component';
 import { SocialMediaComponent } from './about-us/social-media/social-media.component';
+import { TwitterComponent } from './about-us/feeds/twitter/twitter.component';
+import {NgxTwitterTimelineModule} from 'ngx-twitter-timeline';
 
 @NgModule({
   declarations: [
@@ -35,10 +37,12 @@ import { SocialMediaComponent } from './about-us/social-media/social-media.compo
     GameComponent,
     MainComponent,
     SocialMediaComponent,
+    TwitterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxTwitterTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
