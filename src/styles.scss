@@ -28,28 +28,22 @@ $defaultFooterHeigth: 120px;
   box-shadow: 0 0 15px black;
 }
 
+@media screen and (max-width: 1000px) {
+  font-size: 18px;
+}
+
 /** Logo Background **/
+$instagrammBackgroundColor: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+$twitterBackgroundColor: #00c6ff;
+$facebookBackgroundColor: #4267b2;
+$discordBackgroundColor: #738adb;
+$twitchBackgroundColor: #6441a5;
+$youtubeBackgroundColor: #ED3833;
 
-.iconInstagram {
-  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-}
-
-.iconTwitter {
- background: #00c6ff;
-}
-
-.iconFacebook {
- background: #4267b2;
-}
-
-.iconDiscord {
- background: #738adb;
-}
-
-.iconTwitch {
- background: #6441a5;
-}
-
-.iconYoutube {
-  background: #ED3833;
-}
+.shop:hover { background: $backgroundColorOne; text-opacity: 1; }
+.instagram:hover { background: $instagrammBackgroundColor; text-opacity: 1; }
+.twitter:hover { background: $twitterBackgroundColor; text-opacity: 1; }
+.facebook:hover { background: $facebookBackgroundColor; text-opacity: 1; }
+.discord:hover { background: $discordBackgroundColor; text-opacity: 1; }
+.twitch:hover { background: $twitchBackgroundColor; text-opacity: 1; }
+.youtube:hover { background: $youtubeBackgroundColor; text-opacity: 1; }

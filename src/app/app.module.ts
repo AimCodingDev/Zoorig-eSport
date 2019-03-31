@@ -15,6 +15,8 @@ import { CallOfDutyComponent } from './games/call-of-duty/call-of-duty.component
 import { FortniteComponent } from './games/fortnite/fortnite.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { GameComponent } from './games/game/game.component';
+import { MainComponent } from './about-us/main/main.component';
+import { SocialMediaComponent } from './about-us/social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { GameComponent } from './games/game/game.component';
     FortniteComponent,
     DropdownDirective,
     GameComponent,
+    MainComponent,
+    SocialMediaComponent,
   ],
   imports: [
     BrowserModule,
