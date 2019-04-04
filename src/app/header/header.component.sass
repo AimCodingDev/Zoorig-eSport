@@ -1,20 +1,25 @@
 @import "~src/styles"
-@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css")
+@import "~src/app/games/games.component"
 
 $item_heigth: calc(#{$defaultNavbarHeight} - 10px)
 
 *
-  font-size: $font_size
 
   .head
     height: $defaultNavbarHeight
     background-color: $backgroundColorHeader
     padding: 0 20px
     color: $defaultFontColor
+    display: flex
+    flex-direction: row
+    width: 100%
+    box-sizing: border-box
+
 
     .logo
       height: $defaultNavbarHeight
-      float: left
+      display: flex
+      width: 180px
 
       img
         height: $item_heigth
@@ -22,43 +27,59 @@ $item_heigth: calc(#{$defaultNavbarHeight} - 10px)
         border-radius: 30%
         padding: 5px
 
+    .subMenu
+      line-height: calc( #{$defaultNavbarHeight} / 3)
+      font-size: $headingFontSizeSmall
+
     .menu
-      float: right
-      line-height: $defaultNavbarHeight
+      line-height: calc( #{$defaultNavbarHeight} / 3*2)
+      font-size: $headingFontSize
 
-      a
-        color: $defaultFontColor
-        text-transform: uppercase
+    .menu,
+    .subMenu
+      display: flex
+      flex-direction: row
+      list-style-type: none
+      justify-content: flex-end
+      flex-wrap: nowrap
+      width: calc(100vw - 180px - 10px)
+
+
+      li
+        display: flex
         text-decoration: none
-        padding: 0 10px
 
-      a:hover
-        color: $backgroundColorOne
+        a
+          color: $defaultFontColor
+          text-transform: uppercase
+          text-decoration: none
+          padding: 0 10px
+
+        a:hover
+          color: $backgroundColorOne
 
     .show-menu-btn, .hide-menu-btn
       transition: 0.4s
-      font-size: $defaultFontSize
+      font-size: $headingFontSize
       cursor: pointer
       display: none
 
     .show-menu-btn
       float: right
-
       i
         line-height: $defaultNavbarHeight
-
     .show-menu-btn:hover,
     .hide-menu-btn:hover
       color: $backgroundColorOne
-
-    @media screen and (max-width: 900px)
-      .show-menu-btn, .hide-menu-btn
-        display: block
-
-      .menu
-        display: none
 
     #checkbox
       position: absolute
       visibility: hidden
       z-index: -1111
+
+@media screen and (max-width: 900px)
+  .show-menu-btn, .hide-menu-btn
+    display: block
+
+  .menu
+    display: none

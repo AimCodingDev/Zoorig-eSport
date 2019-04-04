@@ -1,48 +1,19 @@
 @import "~src/styles"
 @import "~src/app/games/games.component"
 
-$game_selected: calc(#{$defaultNavbarHeight} / 3)
+$gameSelectedHeight: calc(#{$defaultNavbarHeight} / 3)
+$rotationTime: 10s
 
 #main
   position: relative
-  height: calc(100vh - #{$defaultNavbarHeight} - #{$game_selected})
+  height: calc(100vh - #{$defaultNavbarHeight})
   overflow: hidden
   box-sizing: border-box
-
-  #game-view
-    display: flex
-    flex-wrap: nowrap
-    justify-content: flex-end
-    line-height: $game_selected
-    background-color: $backgroundColorHeader
-    padding: 0 20px
-    font-size: $font_size
-    color: $defaultFontColor
-
-    ul
-      list-style-type: none
-      display: flex
-      flex-direction: row
-
-
-      li
-        display: flex
-
-        a
-          color: $defaultFontColor
-          text-transform: uppercase
-          text-decoration: none
-          padding: 0 10px
-
-        a:hover
-          color: $backgroundColorOne
-
-
 
   #sliders
     position: relative
     width: 100vw
-    height: 100%
+    height: 100vh
     overflow: hidden
 
     img
@@ -55,15 +26,15 @@ $game_selected: calc(#{$defaultNavbarHeight} / 3)
       left: 0
 
     .class_1
-      animation: Klasse_1 infinite 20s
+      animation: Klasse_1 infinite $rotationTime
     .class_2
-      animation: Klasse_2 infinite 20s
+      animation: Klasse_2 infinite $rotationTime
     .class_3
-      animation: Klasse_3 infinite 20s
+      animation: Klasse_3 infinite $rotationTime
     .class_4
-      animation: Klasse_4 infinite 20s
+      animation: Klasse_4 infinite $rotationTime
     .class_5
-      animation: Klasse_5 infinite 20s
+      animation: Klasse_5 infinite $rotationTime
 
     @keyframes Klasse_1
       100%
@@ -130,3 +101,5 @@ $game_selected: calc(#{$defaultNavbarHeight} / 3)
         opacity: 1
       0%
         opacity: 0
+
+

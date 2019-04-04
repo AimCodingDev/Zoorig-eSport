@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/* tslint:disable:no-trailing-whitespace */
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 
 /** Styles Project**/
@@ -9,8 +10,9 @@ $backgroundColorHeader: #34495e;
 $backgroundColorFooter: rgba(25, 1, 41, 0.97);
 $defaultFontFamily: sans-serif;
 $defaultFontColor: white;
-$defaultFontSize: 22px;
-$font_size: 18px;
+$headingFontSize: 22px;
+$headingFontSizeSmall: 18px;
+$textFontSize: 12px;
 $defaultNavbarHeight: 100px;
 $defaultFooterHeigth: 120px;
 
@@ -19,6 +21,10 @@ $defaultFooterHeigth: 120px;
   padding: 0;
   font-family: $defaultFontFamily;
 }
+
+  body {
+    min-width: 450px;
+  }
 
 /** Text-decoration Project**/
 
@@ -33,6 +39,10 @@ $defaultFooterHeigth: 120px;
 
 .boxShadow {
   box-shadow: 0 0 15px whitesmoke;
+}
+
+.linked {
+  background: $backgroundColorOne;
 }
 
 @media screen and (max-width: 1000px) {

@@ -11,7 +11,6 @@
 
 
 .social_media_overview
-  margin: 2em 0
   display: flex
   flex-direction: column
   width: 100%
@@ -49,20 +48,43 @@
 
       p
         display: inline
-        font-size: $font_size
+        font-size: $headingFontSizeSmall
         width: 100%
         color: black
         opacity: 0.4
 
+@media screen and (max-width: 1250px)
+  .social_media_class
+
+    a
+
+      .icons
+        height: 75px
+        width: 75px
+
+        img
+          height: 65px
+
+    @media screen and (max-width: 1100px)
+      .social_media_class
+
+        a
+
+          .icons
+            height: 60px
+            width: 60px
+
+            img
+              height: 50px
 
   #social-view
     display: flex
     flex-wrap: nowrap
     justify-content: flex-end
-    line-height: $game_selected
+    line-height: $gameSelectedHeight
     background-color: $backgroundColorHeader
     padding: 0 20px
-    font-size: $defaultFontSize
+    font-size: $headingFontSize
     color: $defaultFontColor
 
     ul
@@ -82,3 +104,26 @@
           opacity: 0.4
 
 
+@media screen and (max-width: 1250px)
+  .social_media_class
+
+    a
+
+      .icons
+        height: 75px
+        width: 75px
+
+        img
+          height: 65px
+
+    @media screen and (max-width: 1100px)
+      .social_media_class
+
+        a
+
+          .icons
+            height: 60px
+            width: 60px
+
+            img
+              height: 50px

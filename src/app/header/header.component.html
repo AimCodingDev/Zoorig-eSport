@@ -1,20 +1,26 @@
 <div id="header">
   <div class="head">
-    <div class="logo"><a routerLink=""><img src="../../assets/image/new_logo.jpg" alt=""></a></div>
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox" class="show-menu-btn">
-      <i class="fas fa-ellipsis-h"></i>
-    </label>
-
-    <ul class="menu">
-      <a routerLink="/">Home</a>
-      <a routerLink="/about-us">About us</a>
-      <a routerLink="/tournaments">Tournaments</a>
-      <a routerLink="/games">Games</a>
-      <a routerLink="/sponsors">Sponsors</a>
-      <label for="checkbox" class="hide-menu-btn">
-       <i class="fas fa-times"></i>
-      </label>
-    </ul>
+    <div class="logo">
+      <a routerLink=""><img src="../../assets/image/new_logo.jpg" alt=""></a>
+    </div>
+    <div class="namMenu">
+      <ul class="menu">
+        <li [ngClass]="{linked: href === '/'}"><a routerLink="/">Home</a></li>
+        <li [ngClass]="{linked: href === '/about-us'}"><a routerLink="/about-us">About us</a></li>
+        <li [ngClass]="{linked: href === '/tournaments'}"><a routerLink="/tournaments">Tournaments</a></li>
+        <li [ngClass]="{linked: href === '/games'}"><a routerLink="/games">Games</a></li>
+        <li [ngClass]="{linked: href === '/sponsors'}"><a routerLink="/sponsors">Sponsors</a></li>
+        <label class="hide-menu-btn">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+      <ul *ngIf="href === '/games' || x" class="subMenu">
+          <li [ngClass]="{linked: href === '/games/rocket-league'}"><a routerLink="/games/rocket-league"><span class="game-view">Rocket League</span></a></li>
+          <li [ngClass]="{linked: href === '/games/fortnite'}"><a routerLink="/games/fortnite"><span class="game-view">Fortnite</span></a></li>
+          <li [ngClass]="{linked: href === '/games/super-smash-bros'}"><a routerLink="/games/super-smash-bros"><span class="game-view">Super Smash Bros Ultimate</span></a></li>
+          <li [ngClass]="{linked: href === '/games/call-of-duty'}"><a routerLink="/games/call-of-duty"><span class="game-view">Call of Duty</span></a></li>
+          <li [ngClass]="{linked: href === '/games/fifa'}"><a routerLink="/games/fifa"><span class="game-view">Fifa</span></a></li>
+      </ul>
+    </div>
   </div>
 </div>
