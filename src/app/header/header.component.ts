@@ -8,13 +8,13 @@ import {Router} from '@angular/router';
 })
 export class HeaderComponent implements OnInit, AfterContentChecked {
   public href = '';
-  public x = this.router.isActive('/games', false);
+  public hrefChildren = '';
 
   constructor(private router: Router) {}
 
   ngAfterContentChecked() {
-    this.href = this.router.url;
-    console.log(this.router.url);
+    this.href = this.router.url.split('/')[1];
+    this.hrefChildren = this.router.url.split('/')[2];
   }
 
   ngOnInit() {

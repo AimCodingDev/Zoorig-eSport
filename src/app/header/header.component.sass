@@ -1,15 +1,15 @@
 @import "~src/styles"
 @import "~src/app/games/games.component"
 
-$item_heigth: calc(#{$defaultNavbarHeight} - 10px)
+$item_heigth: calc(#{$navbarHeight} - 10px)
 
 *
 
   .head
-    height: $defaultNavbarHeight
+    height: $navbarHeight
     background-color: $backgroundColorHeader
     padding: 0 20px
-    color: $defaultFontColor
+    color: $fontColorDefault
     display: flex
     flex-direction: row
     width: 100%
@@ -17,7 +17,7 @@ $item_heigth: calc(#{$defaultNavbarHeight} - 10px)
 
 
     .logo
-      height: $defaultNavbarHeight
+      height: $navbarHeight
       display: flex
       width: 180px
 
@@ -28,15 +28,16 @@ $item_heigth: calc(#{$defaultNavbarHeight} - 10px)
         padding: 5px
 
     .subMenu
-      line-height: calc( #{$defaultNavbarHeight} / 3)
-      font-size: $headingFontSizeSmall
+      line-height: calc( #{$navbarHeight} / 3)
+      font-size: $fontSizeHeadingSmall
 
     .menu
-      line-height: calc( #{$defaultNavbarHeight} / 3*2)
-      font-size: $headingFontSize
+      line-height: calc( #{$navbarHeight} / 3*2)
+      font-size: $fontSizeHeadingMedium
 
     .menu,
-    .subMenu
+    .subMenu,
+    .minMenu
       display: flex
       flex-direction: row
       list-style-type: none
@@ -44,13 +45,14 @@ $item_heigth: calc(#{$defaultNavbarHeight} - 10px)
       flex-wrap: nowrap
       width: calc(100vw - 180px - 10px)
 
+    ul
 
       li
         display: flex
         text-decoration: none
 
         a
-          color: $defaultFontColor
+          color: $fontColorDefault
           text-transform: uppercase
           text-decoration: none
           padding: 0 10px
@@ -58,28 +60,13 @@ $item_heigth: calc(#{$defaultNavbarHeight} - 10px)
         a:hover
           color: $backgroundColorOne
 
-    .show-menu-btn, .hide-menu-btn
-      transition: 0.4s
-      font-size: $headingFontSize
-      cursor: pointer
-      display: none
+    @media screen and (min-width: 900px)
+      .minMenu
+        display: none
 
-    .show-menu-btn
-      float: right
-      i
-        line-height: $defaultNavbarHeight
-    .show-menu-btn:hover,
-    .hide-menu-btn:hover
-      color: $backgroundColorOne
+    @media screen and (max-width: 900px)
+      .menu, .subMenu
+        display: none
 
-    #checkbox
-      position: absolute
-      visibility: hidden
-      z-index: -1111
-
-@media screen and (max-width: 900px)
-  .show-menu-btn, .hide-menu-btn
-    display: block
-
-  .menu
-    display: none
+      .minMenu
+        display: block

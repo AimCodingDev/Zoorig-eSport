@@ -14,7 +14,7 @@
   display: flex
   flex-direction: column
   width: 100%
-  height: calc(100% - #{$defaultNavbarHeight})
+  height: calc(100% - #{$navbarHeight})
   flex-wrap: nowrap
 
   .social_media_class
@@ -48,7 +48,7 @@
 
       p
         display: inline
-        font-size: $headingFontSizeSmall
+        font-size: $fontSizeHeadingSmall
         width: 100%
         color: black
         opacity: 0.4
@@ -84,8 +84,8 @@
     line-height: $gameSelectedHeight
     background-color: $backgroundColorHeader
     padding: 0 20px
-    font-size: $headingFontSize
-    color: $defaultFontColor
+    font-size: $fontSizeHeadingMedium
+    color: $fontColorDefault
 
     ul
       list-style-type: none
@@ -97,7 +97,7 @@
         display: flex
 
         a
-          color: $defaultFontColor
+          color: $fontColorDefault
           text-transform: uppercase
           text-decoration: none
           padding: 0 10px

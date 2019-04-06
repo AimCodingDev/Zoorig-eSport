@@ -8,27 +8,27 @@ $backgroundColorOne: #2767b1;
 $backgroundColorTwo: #3052a4;
 $backgroundColorHeader: #34495e;
 $backgroundColorFooter: rgba(25, 1, 41, 0.97);
-$defaultFontFamily: sans-serif;
-$defaultFontColor: white;
-$headingFontSize: 22px;
-$headingFontSizeSmall: 18px;
-$textFontSize: 12px;
-$defaultNavbarHeight: 100px;
-$defaultFooterHeigth: 120px;
+$fontFamilyDefault: sans-serif;
+$fontColorDefault: white;
+$fontSizeHeadingMedium: 22px;
+$fontSizeHeadingSmall: 18px;
+$fontSizeText: 12px;
+$navbarHeight: 100px;
+$footerHeight: 120px;
 
 * {
   margin: 0;
   padding: 0;
-  font-family: $defaultFontFamily;
+  font-family: $fontFamilyDefault;
 }
 
   body {
     min-width: 450px;
   }
 
-/** Text-decoration Project**/
+/** Decoration Project**/
 
-.backgroundImage {
+.backgroundImageNewLogo {
   background: url("~src/assets/image/new_logo_2.jpg") no-repeat 0 center fixed;
   background-size: cover;
 }
@@ -45,22 +45,19 @@ $defaultFooterHeigth: 120px;
   background: $backgroundColorOne;
 }
 
-@media screen and (max-width: 1000px) {
-  font-size: 18px;
-}
-
 /** Logo Background **/
-$instagrammBackgroundColor: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-$twitterBackgroundColor: #00c6ff;
-$facebookBackgroundColor: #4267b2;
-$discordBackgroundColor: #738adb;
-$twitchBackgroundColor: #6441a5;
-$youtubeBackgroundColor: #ED3833;
+$backgroundColorInstagramm: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+$backgroundColorTwitter: #00c6ff;
+$backgroundColorFacebook: #4267b2;
+$backgroundColorDiscode: #738adb;
+$backgroundColorTwitch: #6441a5;
+$backgroundColorYoutube: #ED3833;
+$backgroundColorDefault: $backgroundColorOne;
 
-.shop:hover { background: $backgroundColorOne; text-opacity: 1; }
-.instagram:hover { background: $instagrammBackgroundColor; text-opacity: 1; }
-.twitter:hover { background: $twitterBackgroundColor; text-opacity: 1; }
-.facebook:hover { background: $facebookBackgroundColor; text-opacity: 1; }
-.discord:hover { background: $discordBackgroundColor; text-opacity: 1; }
-.twitch:hover { background: $twitchBackgroundColor; text-opacity: 1; }
-.youtube:hover { background: $youtubeBackgroundColor; text-opacity: 1; }
+.instagram:hover { background: $backgroundColorInstagramm; opacity: 1; }
+.twitter:hover { background: $backgroundColorTwitter; opacity: 1; }
+.facebook:hover { background: $backgroundColorFacebook; opacity: 1; }
+.discord:hover { background: $backgroundColorDiscode; opacity: 1; }
+.twitch:hover { background: $backgroundColorTwitch; opacity: 1; }
+.youtube:hover { background: $backgroundColorYoutube; opacity: 1; }
+.default:hover { background: $backgroundColorDefault; opacity: 1; }
