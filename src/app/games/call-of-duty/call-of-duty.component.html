@@ -1,179 +1,58 @@
 <div class="main">
   <div class="player">
-    <div class="member">
-      <img class="picture" src="../../../assets/image/member/new_logo.jpg" alt="">
+    <div class="member" *ngFor="let member of members">
+      <img class="picture" [src]="member.image" alt="">
       <div class="member-contend">
-        <span class="fullName">Marco Meichtry</span>
-        <span class="gamerTag">Actaneon</span>
-        <span class=""></span>
-        <ul class="memberListSocialMedia">
-          <li class="memberListSocialMediaIcons facebook">
-            <a href="">
-              <img src="../../../assets/icons/facebook.svg" alt="">
-            </a>
+        <span class="fullName">{{ member.name }}</span>
+        <span class="gamerTag">{{ member.gamerTag }}</span>
+        <ul class="gameStation">
+          <li class="gameStationIcon" *ngIf="member.playstation">
+            <img src="../../../assets/icons/gamePlattform/playstation.svg" alt="">
           </li>
-          <li class="memberListSocialMediaIcons twitter">
-            <a href="">
-              <img src="../../../assets/icons/twitter.svg" alt="">
-            </a>
+          <li class="gameStationIcon" *ngIf="member.xbox">
+            <img src="../../../assets/icons/gamePlattform/xbox.svg" alt="">
           </li>
-          <li class="memberListSocialMediaIcons instagram">
-            <a href="">
-              <img src="../../../assets/icons/instagram.svg" alt="">
-            </a>
+          <li class="gameStationIcon" *ngIf="member.nintendo">
+            <img src="../../../assets/icons/gamePlattform/switch.svg" alt="">
           </li>
-          <li class="memberListSocialMediaIcons discord">
-            <a href="">
-              <img src="../../../assets/icons/discord.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons twitch">
-            <a href="">
-              <img src="../../../assets/icons/twitch.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons youtube">
-            <a href="">
-              <img src="../../../assets/icons/youtube.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons default">
-            <a href="">
-              <img src="../../../assets/icons/mail.svg" alt="">
-            </a>
+          <li class="gameStationIcon" *ngIf="member.pc">
+            <img src="../../../assets/icons/gamePlattform/pc.svg" alt="">
           </li>
         </ul>
-      </div>
-    </div>
-    <div class="member">
-      <img class="picture" src="../../../assets/image/member/new_logo.jpg" alt="">
-      <div class="member-contend">
-        <span class="fullName">Marco Meichtry</span>
-        <span class="gamerTag">Actaneon</span>
-        <span class=""></span>
+        <hr>
         <ul class="memberListSocialMedia">
-          <li class="memberListSocialMediaIcons facebook">
-            <a href="">
-              <img src="../../../assets/icons/facebook.svg" alt="">
+          <li *ngIf="member.facebook !== ''" class="memberListSocialMediaIcons facebook">
+            <a href="{{ member.facebook }}">
+              <img src="../../../assets/icons/socialMedia/facebook.svg" alt="">
             </a>
           </li>
           <li class="memberListSocialMediaIcons twitter">
-            <a href="">
-              <img src="../../../assets/icons/twitter.svg" alt="">
+            <a *ngIf="member.twitter !== ''" href="{{ member.twitter }}">
+              <img src="../../../assets/icons/socialMedia/twitter.svg" alt="">
             </a>
           </li>
-          <li class="memberListSocialMediaIcons instagram">
-            <a href="">
-              <img src="../../../assets/icons/instagram.svg" alt="">
+          <li *ngIf="member.instagram !== ''" class="memberListSocialMediaIcons instagram">
+            <a href="{{ member.instagram }}">
+              <img src="../../../assets/icons/socialMedia/instagram.svg" alt="">
             </a>
           </li>
-          <li class="memberListSocialMediaIcons discord">
-            <a href="">
-              <img src="../../../assets/icons/discord.svg" alt="">
+          <li *ngIf="member.discord !== ''" class="memberListSocialMediaIcons discord">
+            <a href="{{ member.discord}}">
+              <img src="../../../assets/icons/socialMedia/discord.svg" alt="">
             </a>
           </li>
-          <li class="memberListSocialMediaIcons twitch">
-            <a href="">
-              <img src="../../../assets/icons/twitch.svg" alt="">
+          <li *ngIf="member.twitch !== ''" class="memberListSocialMediaIcons twitch">
+            <a href="{{ member.twitch }}">
+              <img src="../../../assets/icons/socialMedia/twitch.svg" alt="">
             </a>
           </li>
-          <li class="memberListSocialMediaIcons youtube">
-            <a href="">
-              <img src="../../../assets/icons/youtube.svg" alt="">
+          <li *ngIf="member.youtube !== ''" class="memberListSocialMediaIcons youtube">
+            <a href="{{ member.youtube }}">
+              <img src="../../../assets/icons/socialMedia/youtube.svg" alt="">
             </a>
           </li>
-          <li class="memberListSocialMediaIcons default">
-            <a href="">
-              <img src="../../../assets/icons/mail.svg" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="member">
-      <img class="picture" src="../../../assets/image/member/new_logo.jpg" alt="">
-      <div class="member-contend">
-        <span class="fullName">Marco Meichtry</span>
-        <span class="gamerTag">Actaneon</span>
-        <span class=""></span>
-        <ul class="memberListSocialMedia">
-          <li class="memberListSocialMediaIcons facebook">
-            <a href="">
-              <img src="../../../assets/icons/facebook.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons twitter">
-            <a href="">
-              <img src="../../../assets/icons/twitter.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons instagram">
-            <a href="">
-              <img src="../../../assets/icons/instagram.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons discord">
-            <a href="">
-              <img src="../../../assets/icons/discord.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons twitch">
-            <a href="">
-              <img src="../../../assets/icons/twitch.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons youtube">
-            <a href="">
-              <img src="../../../assets/icons/youtube.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons default">
-            <a href="">
-              <img src="../../../assets/icons/mail.svg" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="member">
-      <img class="picture" src="../../../assets/image/member/new_logo.jpg" alt="">
-      <div class="member-contend">
-        <span class="fullName">Marco Meichtry</span>
-        <span class="gamerTag">Actaneon</span>
-        <span class=""></span>
-        <ul class="memberListSocialMedia">
-          <li class="memberListSocialMediaIcons facebook">
-            <a href="">
-              <img src="../../../assets/icons/facebook.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons twitter">
-            <a href="">
-              <img src="../../../assets/icons/twitter.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons instagram">
-            <a href="">
-              <img src="../../../assets/icons/instagram.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons discord">
-            <a href="">
-              <img src="../../../assets/icons/discord.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons twitch">
-            <a href="">
-              <img src="../../../assets/icons/twitch.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons youtube">
-            <a href="">
-              <img src="../../../assets/icons/youtube.svg" alt="">
-            </a>
-          </li>
-          <li class="memberListSocialMediaIcons default">
-            <a href="">
+          <li *ngIf="member.mail !== ''" class="memberListSocialMediaIcons default">
+            <a href="{{ member.mail }}">
               <img src="../../../assets/icons/mail.svg" alt="">
             </a>
           </li>

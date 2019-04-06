@@ -1,7 +1,6 @@
 @import "~src/styles"
 @import "~src/app/games/games.component"
 
-
 .main
   display: flex
   flex-wrap: wrap
@@ -16,7 +15,6 @@
     width: 100%
     height: 100%
 
-
     .member:hover .member-contend
       right: 0
 
@@ -25,7 +23,7 @@
 
     .member
       margin: 5px
-      width: 500px
+      width: 600px
       height: 250px
       display: flex
       flex-direction: column
@@ -60,11 +58,25 @@
           font-size: $fontSizeHeadingMedium
           font-weight: bold
 
-        .gamerTag,
-        .description
+        .gamerTag
           display: flex
           font-size: $fontSizeHeadingSmall
 
+        .gameStation
+          display: flex
+          flex-wrap: wrap
+          flex-direction: row
+          list-style-type: none
+          height: 35px
+
+          .gameStationIcon
+            display: flex
+            height: 35px
+            padding-right: 5px
+            align-items: center
+
+            img
+              width: 25px
 
         .memberListSocialMedia
           display: flex

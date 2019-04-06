@@ -19,6 +19,7 @@ $item_heigth: calc(#{$navbarHeight} - 10px)
     .logo
       height: $navbarHeight
       display: flex
+      align-items: center
       width: 180px
 
       img
@@ -32,7 +33,7 @@ $item_heigth: calc(#{$navbarHeight} - 10px)
       font-size: $fontSizeHeadingSmall
 
     .menu
-      line-height: calc( #{$navbarHeight} / 3*2)
+      line-height: calc( #{$navbarHeight} / 3*1.9)
       font-size: $fontSizeHeadingMedium
 
     .menu,
@@ -58,7 +59,7 @@ $item_heigth: calc(#{$navbarHeight} - 10px)
           padding: 0 10px
 
         a:hover
-          color: $backgroundColorOne
+          border: 2px solid $fontColorDefault
 
     @media screen and (min-width: 900px)
       .minMenu

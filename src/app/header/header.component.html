@@ -13,15 +13,15 @@
       </ul>
       <ul class="minMenu">
         <li>
-          <a href=""><img src="../../assets/icons/bars-solid.svg" alt=""></a>
+          <a href=""><img src="../../assets/icons/website/bars-solid.svg" alt=""></a>
         </li>
       </ul>
       <ul *ngIf="href === 'games'" class="subMenu">
           <li [ngClass]="{linked: hrefChildren === 'rocket-league'}"><a routerLink="/games/rocket-league"><span class="game-view">Rocket League</span></a></li>
           <li [ngClass]="{linked: hrefChildren === 'fortnite'}"><a routerLink="/games/fortnite"><span class="game-view">Fortnite</span></a></li>
-          <li [ngClass]="{linked: hrefChildren === 'super-smash-bros'}"><a routerLink="/games/super-smash-bros"><span class="game-view">Super Smash Bros</span></a></li>
-          <li [ngClass]="{linked: hrefChildren === 'call-of-duty'}"><a routerLink="/games/call-of-duty"><span class="game-view">Call of Duty</span></a></li>
-          <li [ngClass]="{linked: hrefChildren === 'fifa'}"><a routerLink="/games/fifa"><span class="game-view">Fifa</span></a></li>
+        <li [ngClass]="{linked: hrefChildren === 'fifa'}"><a routerLink="/games/fifa"><span class="game-view">Fifa</span></a></li>
+        <li [ngClass]="{linked: hrefChildren === 'super-smash-bros'}"><a routerLink="/games/super-smash-bros"><span class="game-view">Super Smash Bros</span></a></li>
+        <li [ngClass]="{linked: hrefChildren === 'call-of-duty'}"><a routerLink="/games/call-of-duty"><span class="game-view">Call of Duty</span></a></li>
       </ul>
     </div>
   </div>
