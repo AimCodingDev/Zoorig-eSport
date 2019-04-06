@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main backgroundImage">
   <div class="player">
     <div class="member" *ngFor="let member of members">
       <img class="picture" [src]="member.image" alt="">
@@ -22,37 +22,37 @@
         <hr>
         <ul class="memberListSocialMedia">
           <li *ngIf="member.facebook !== ''" class="memberListSocialMediaIcons facebook">
-            <a href="{{ member.facebook }}">
+            <a href="{{ member.facebook }}" target=“_blank“>
               <img src="../../../assets/icons/socialMedia/facebook.svg" alt="">
             </a>
           </li>
-          <li class="memberListSocialMediaIcons twitter">
-            <a *ngIf="member.twitter !== ''" href="{{ member.twitter }}">
+          <li *ngIf="member.twitter !== ''" class="memberListSocialMediaIcons twitter">
+            <a href="{{ member.twitter }}" target=“_blank“>
               <img src="../../../assets/icons/socialMedia/twitter.svg" alt="">
             </a>
           </li>
           <li *ngIf="member.instagram !== ''" class="memberListSocialMediaIcons instagram">
-            <a href="{{ member.instagram }}">
+            <a href="{{ member.instagram }}" target=“_blank“>
               <img src="../../../assets/icons/socialMedia/instagram.svg" alt="">
             </a>
           </li>
           <li *ngIf="member.discord !== ''" class="memberListSocialMediaIcons discord">
-            <a href="{{ member.discord}}">
+            <a href="{{ member.discord}}" target=“_blank“>
               <img src="../../../assets/icons/socialMedia/discord.svg" alt="">
             </a>
           </li>
           <li *ngIf="member.twitch !== ''" class="memberListSocialMediaIcons twitch">
-            <a href="{{ member.twitch }}">
+            <a href="{{ member.twitch }}" target=“_blank“>
               <img src="../../../assets/icons/socialMedia/twitch.svg" alt="">
             </a>
           </li>
           <li *ngIf="member.youtube !== ''" class="memberListSocialMediaIcons youtube">
-            <a href="{{ member.youtube }}">
+            <a href="{{ member.youtube }}" target=“_blank“>
               <img src="../../../assets/icons/socialMedia/youtube.svg" alt="">
             </a>
           </li>
           <li *ngIf="member.mail !== ''" class="memberListSocialMediaIcons default">
-            <a href="{{ member.mail }}">
+            <a href="{{ member.mail }}" target=“_blank“>
               <img src="../../../assets/icons/mail.svg" alt="">
             </a>
           </li>

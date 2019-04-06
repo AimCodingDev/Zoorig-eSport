@@ -17,7 +17,7 @@ export class FortniteComponent implements OnInit {
       , ''
       , ''
       , 'https://twitch.tv/dimension240'
-      , ''
+      , 'https://www.youtube.com/channel/UCjsVIHCr0b5SIrZaOlQatzQ'
       , ''
       , true
       , false
@@ -29,7 +29,7 @@ export class FortniteComponent implements OnInit {
       , 'Davide L.'
       , 'Don Ferox'
       , ''
-      , 'https://twitter.com/Donferoxofficial'
+      , 'https://twitter.com/Donferoxoffical'
       , ''
       , ''
       , 'https://twitch.tv/donferox'

@@ -17,6 +17,7 @@ const routes: Routes = [
   {path: 'about-us',
     component: AboutUsComponent,
     children: [
+      {path: '', component: AboutUsComponent},
       {path: 'twitter', component: TwitterComponent},
     ]},
   {path: 'games',
@@ -28,7 +29,6 @@ const routes: Routes = [
       {path: 'fifa', component: FifaComponent},
       {path: 'super-smash-bros', component: SuperSmashBrosComponent},
       {path: 'fortnite', component: FortniteComponent},
-      {path: '**', redirectTo: 'profile', pathMatch: 'full' }
     ]
   },
   {path: '**', redirectTo: 'home', pathMatch: 'full' }

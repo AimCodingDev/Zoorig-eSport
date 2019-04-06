@@ -33,7 +33,7 @@ export class RocketLeagueComponent implements OnInit {
       , ''
       , ''
       , 'https://twitch.tv/thewink47'
-      , ''
+      , 'https://t.co/mw4Yzri0XD'
       , ''
       , true
       , false
@@ -47,7 +47,7 @@ export class RocketLeagueComponent implements OnInit {
       , ''
       , 'https://twitter.com/RLTexo'
       , ''
-      , ''
+      , 'https://t.co/LhlIUViSt8'
       , 'https://twitch.tv/texo_rl'
       , ''
       , ''

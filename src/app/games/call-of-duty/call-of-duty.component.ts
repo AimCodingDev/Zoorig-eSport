@@ -80,7 +80,7 @@ export class CallOfDutyComponent implements OnInit {
       , 'https://twitter.com/CamorraCOD'
       , ''
       , ''
-      , ''
+      , 'https://https://t.co/vwM2mHAz5d'
       , ''
       , ''
       , true
@@ -113,7 +113,7 @@ export class CallOfDutyComponent implements OnInit {
       , ''
       , ''
       , ''
-      , ''
+      , 'https://https://t.co/AWsSIgOiSe'
       , ''
       , true
       , false
