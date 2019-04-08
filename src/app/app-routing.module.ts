@@ -10,6 +10,7 @@ import {SuperSmashBrosComponent} from './games/super-smash-bros/super-smash-bros
 import {FortniteComponent} from './games/fortnite/fortnite.component';
 import {GameComponent} from './games/game/game.component';
 import {TwitterComponent} from './about-us/feeds/twitter/twitter.component';
+import {TournamentsComponent} from './tournaments/tournaments.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
       {path: '', component: AboutUsComponent},
       {path: 'twitter', component: TwitterComponent},
     ]},
+  {path: 'tournaments', component: TournamentsComponent},
   {path: 'games',
     component: GamesComponent,
     children: [

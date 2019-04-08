@@ -13,6 +13,7 @@ export class Member {
     public playstation: boolean = false,
     public xbox: boolean = false,
     public nintendo: boolean = false,
-    public pc: boolean = false
+    public pc: boolean = false,
+    public id: string = gamerTag
     )   { }
 }
