@@ -9,16 +9,16 @@ import {Member} from '../model/member.model';
 export class FooterComponent implements OnInit {
   members: Member[] = [
     new Member(
-      ''
+      'src/assets/image/new_logo_2.jpg'
+      , 'Zoorig eSport'
+      , 'ZRG'
+      , 'https://www.facebook.com/zoorigesport/'
+      , 'https://twitter.com/Zoorig_eSport'
+      , 'https://instagram.com/zoorig.eSport/'
       , ''
-      , ''
-      , ''
-      , ''
-      , ''
-      , ''
-      , ''
-      , ''
-      , ''
+      , 'https://www.twitch.tv/zoorigesport'
+      , 'https://www.youtube.com/channel/UCgUP1TYGLz69GQqfb8nlVcQ'
+      , 'mailto:info@zoorig-esport.com'
     )
   ];
 

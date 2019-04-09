@@ -9,7 +9,7 @@ import {FifaComponent} from './games/fifa/fifa.component';
 import {SuperSmashBrosComponent} from './games/super-smash-bros/super-smash-bros.component';
 import {FortniteComponent} from './games/fortnite/fortnite.component';
 import {GameComponent} from './games/game/game.component';
-import {TwitterComponent} from './about-us/feeds/twitter/twitter.component';
+import {TwitterComponent} from './about-us/social-media/twitter/twitter.component';
 import {TournamentsComponent} from './tournaments/tournaments.component';
 
 const routes: Routes = [
@@ -19,7 +19,7 @@ const routes: Routes = [
     component: AboutUsComponent,
     children: [
       {path: '', component: AboutUsComponent},
-      {path: 'twitter', component: TwitterComponent},
+      {path: 'twitter', component: TwitterComponent },
     ]},
   {path: 'tournaments', component: TournamentsComponent},
   {path: 'games',
