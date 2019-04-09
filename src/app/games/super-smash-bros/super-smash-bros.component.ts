@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Member} from '../member.model';
+import {Member} from '../../model/member.model';
 
 @Component({
   selector: 'app-super-smash-bros',

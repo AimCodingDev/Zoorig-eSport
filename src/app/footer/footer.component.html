@@ -1,8 +1,42 @@
 <div id="main">
-  <div class="nav">
-    <a href="#">
-      <span>Zoorig eSport</span>
-    </a>
-    <span>&copy; by AimCoding</span>
+  <div class="footer-text">
+    <span class="footerText">Follow us on</span>
+    <ul class="memberListSocialMedia" *ngFor="let member of members">
+      <li class="memberListSocialMediaIcons facebook">
+        <a href="{{ member.facebook }}" target=“_blank“>
+          <img src="../../assets/icons/socialMedia/facebook.svg" alt="">
+        </a>
+      </li>
+      <li class="memberListSocialMediaIcons twitter">
+        <a href="{{ member.twitter }}" target=“_blank“>
+          <img src="../../assets/icons/socialMedia/twitter.svg" alt="">
+        </a>
+      </li>
+      <li class="memberListSocialMediaIcons instagram">
+        <a href="{{ member.instagram }}" target=“_blank“>
+          <img src="../../assets/icons/socialMedia/instagram.svg" alt="">
+        </a>
+      </li>
+      <li class="memberListSocialMediaIcons discord">
+        <a href="{{ member.discord}}" target=“_blank“>
+          <img src="../../assets/icons/socialMedia/discord.svg" alt="">
+        </a>
+      </li>
+      <li class="memberListSocialMediaIcons twitch">
+        <a href="{{ member.twitch }}" target=“_blank“>
+          <img src="../../assets/icons/socialMedia/twitch.svg" alt="">
+        </a>
+      </li>
+      <li class="memberListSocialMediaIcons youtube">
+        <a href="{{ member.youtube }}" target=“_blank“>
+          <img src="../../assets/icons/socialMedia/youtube.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="impressum">
+    <p>Zoorig eSport</p>
+    <span>|</span>
+    <p>&copy; by AimCoding</p>
   </div>
 </div>

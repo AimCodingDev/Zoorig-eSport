@@ -20,6 +20,7 @@ import { SocialMediaComponent } from './about-us/social-media/social-media.compo
 import { TwitterComponent } from './about-us/feeds/twitter/twitter.component';
 import {NgxTwitterTimelineModule} from 'ngx-twitter-timeline';
 import { TournamentsComponent } from './tournaments/tournaments.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { TournamentsComponent } from './tournaments/tournaments.component';
     SocialMediaComponent,
     TwitterComponent,
     TournamentsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
