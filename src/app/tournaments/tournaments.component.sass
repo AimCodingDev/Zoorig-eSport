@@ -1,0 +1,85 @@
+@import "~src/styles"
+
+$backgroundColorTournaments: #ffd613
+
+.main
+  display: flex
+  flex-direction: row
+  width: 100%
+  justify-content: center
+  background-color: $backgroundColorDefault
+  color: $fontColorDefault
+
+  .timeline
+    display: flex
+    flex-direction: column
+    max-width: 80%
+    justify-content: center
+    background-color: $backgroundColorDefault
+    color: $fontColorDefault
+
+    span
+      opacity: 0.7
+      line-height: 1
+
+    .timeline-body
+      display: flex
+      flex-direction: row
+      justify-content: center
+      margin: 5px 0
+      height: 100%
+      position: relative
+
+      .image
+        display: flex
+        width: 200px
+        height: 100px
+        padding-right: 1%
+
+
+
+      .timeline-item
+        display: flex
+        flex-direction: column
+        width: 60%
+        position: relative
+        padding-left: 3px
+
+        &:after
+          content: ''
+          width: 3px
+          height: 100%
+          background-color: $backgroundColorTournaments
+          position: absolute
+          left: -4px
+          top: 0
+
+        .time
+          display: flex
+          font-size: $fontSizeHeadingSmall
+
+        .title
+          display: flex
+          font-size: $fontSizeHeadingMedium
+
+          .timeline-content
+            display: flex
+            flex-direction: row
+
+            span
+              opacity: 1
+
+            .timeline-content-text
+              display: flex
+              flex-direction: column
+
+
+              .location
+                display: flex
+                font-size: $fontSizeHeadingSmall
+                opacity: 0.7
+
+
+              .description
+                display: flex
+                font-size: $fontSizeText

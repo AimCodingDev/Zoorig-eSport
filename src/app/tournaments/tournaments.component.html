@@ -1,0 +1,17 @@
+<div class="main">
+  <div class="timeline">
+    <div class="timeline-body" *ngFor="let tournament of tournaments">
+      <img class="image" src="{{ tournament.img }}" alt="">
+      <div class="timeline-item">
+        <span class="time">{{ tournament.date }}</span>
+        <p class="title">{{ tournament.title }}</p>
+        <div class="timeline-content">
+          <div class="timeline-content-text">
+            <p class="location">{{ tournament.location }}</p>
+            <span class="description">{{ tournament.description}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
