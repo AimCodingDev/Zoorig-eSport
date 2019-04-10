@@ -14,7 +14,7 @@ export class TournamentsComponent implements OnInit {
       , 'call-of-duty'
       , 'eParadise Zürich'
       , ''
-      , '../../../assets/image/turniere/23._24.02.19.jpeg'
+      , '../../../assets/image/turniere/23._24.02.2019.jpeg'
     ),
     new Tournament(
       '22. Dezember 2018'
@@ -48,7 +48,7 @@ export class TournamentsComponent implements OnInit {
         @Daplye (Pick-Up)
 
         Unsere Youth Spieler erreichten den 3ten Platz von 16 Teams.`
-      , ''
+      , '../../../assets/image/turniere/01._02.12.2018.jpeg'
     ),
     new Tournament(
       '10. November 2018'
@@ -62,7 +62,7 @@ export class TournamentsComponent implements OnInit {
         @eDayDinho
 
         Sie erreichten das Viertel Finale.`
-      , ''
+      , '../../../assets/image/turniere/10.11.2018.jpg'
     ),
     new Tournament(
       '20. Oktober 2018'
@@ -78,10 +78,10 @@ export class TournamentsComponent implements OnInit {
         Unsere Spieler erreichten das Finale und Gewinnen
         das erste 2v2 Fortnitw Turnier in der E-Challenge Bar.
         1ter. Platz.`
-      , ''
+      , '../../../assets/image/turniere/20.10.2018.png'
     ),
     new Tournament(
-      '12. Oktober 18'
+      '12. Oktober 2018'
       , 'Call of Duty BlackOps4 Turnier'
       , 'call-of-duty'
       , 'Herofest Bern'
@@ -95,10 +95,10 @@ export class TournamentsComponent implements OnInit {
                     @OhhSayjayin
 
                     Sie errichten das Finale und den 2te Platz gegen Vertex.`
-      , ''
+      , '../../../assets/image/turniere/12.10.2018.jpg'
     ),
     new Tournament(
-      '21 September 18'
+      '21. September 2018'
       , 'Fortnite Online Tournament'
       , 'fortnite'
       , 'eParadise Zürich'
@@ -107,10 +107,10 @@ export class TournamentsComponent implements OnInit {
                     Folgende Spieler traten an:
                     @X2Hiigh4YouX
                     @Don_Ferox`
-      , ''
+      , '../../../assets/image/turniere/21.09.2018.jpg'
     ),
     new Tournament(
-      '15. September 18'
+      '15. September 2018'
       , 'Grösstes 2v2 Fortnite Turnier der Schweiz'
       , 'fortnite'
       , 'Zürich Gameshow'
@@ -122,108 +122,108 @@ export class TournamentsComponent implements OnInit {
 
                     Sie erreichten das Grande-Final und wurden
                     7ter. Platz von ca.1000 Spieler.      `
-      , ''
+      , '../../../assets/image/turniere/15.09.2018.jpg'
     ),
     new Tournament(
-      '04. August 18'
+      '04. August 2018'
       , ' Fortnite Battle Royal Turnier by GameTurnier'
       , 'fortnite'
       , 'Online Turnier'
       , `Unser nächstes Online-Turnier im 2vs2 Modus in Fortnite auf der PS4. Dieses mal für Zoorig eSport waren folgende am Start: @X2Hiigh4You @DiMeNsioN240`
-      , ''
+      , '../../../assets/image/turniere/04.08.2018.jpg'
     ),
     new Tournament(
-      '28. Juli 18'
+      '28. Juli 2018'
       , 'FIFA 18 Virtual League Finals'
       , 'fifa'
       , 'Messeturm Basel'
       , `Unter Nächstes FIFA 18 Turnier, dieses Mal an der Virtual League in Basel würdig Vertreten durch: @EDaydinho @eMamijunior`
-      , ''
+      , '../../../assets/image/turniere/28.07.2018.jpg'
     ),
     new Tournament(
-      '21. - 22. Juli 18'
+      '21. - 22. Juli 2018'
       , 'Call of Duty WWII Turnier by GameTurnier'
       , 'call-of-duty'
       , 'Fehraltdorf im Heiget Huus'
       , `Du bist ein leidenschaftlicher Spieler und möchtest dich gegen andere Leute messen? Dann bring deine Freunde zusammen und mache dich bereit, Ein Turnier, in dem sich max. 32 Teams mit je vier Spielern um den Preispool von 3000.- CHF batteln. Es wird nach den Call of Duty World League Regeln gespielt, und die Mannschaften testen sich gegenseitig in den Modi: Stellung, Suchen und Zerstören und Capture the Flag.`
-      , ''
+      , '../../../assets/image/turniere/21._22.07.2018.jpg'
     ),
     new Tournament(
-      '23. Juni 18'
+      '23. Juni 2018'
       , 'FIFA 18 E-Sport Turnier 2vs2'
       , 'fifa'
       , 'Shoppi Tivoli '
       , `An der SportBar wird am Samstag, 23. Juni 2018, die Weltmeisterschaft nachgespielt. FIFA-Begeisterte können sich als Duo anmelden und an dem E-Sport Turnier teilnehmen. Mit etwas Glück, Geschicklichkeit und Können landen Sie auf dem Podest und gewinnen Shoppi Tivoli Gutscheine im Wert von bis zu CHF 800.–. Die Online-Plätze sind bereits vergeben, aber eventuell haben Sie Glück und erhalten vor Ort noch einen Platz.`
-      , ''
+      , '../../../assets/image/turniere/23.06.2018(2).jpg'
     ),
     new Tournament(
-      '23. Juni 18'
+      '23. Juni 2018'
       , 'Fortnite Battle Royal Turnier'
       , 'fortnite'
       , 'eParadise Zürich'
       , 'Neues Turnier, gleiches Ziel. An die Spitze mit unseren Top-Spielern von Fortnite wollen wir aufs Podest und die Krone holen. Seid am Samstag 23 Juni live dabei und Unterstützt uns.'
-      , ''
+      , '../../../assets/image/turniere/23.06.2018.jpg'
     ),
     new Tournament(
-      '10. Mai 18'
+      '10. Mai 2018'
       , 'FIFA 18 Schweizer Meisterschaften'
       , 'fifa'
       , 'Fantasy Basel'
       , 'Das Grand Final der diesjährigen FIFA 18 Schweizer Meisterschaft steht an! Am Donnerstag den 10. Mai 2018 duellieren sich die Besten 24 Spieler in 4x 6er Gruppen an der Fantasy Basel Messe gegeneinander! Mit dabei unser FIFA 18 Star - Fabio aka Cobraa (vordere Reihe, 4te von links)'
-      , ''
+      , '../../../assets/image/turniere/10.05.2018.png'
     ),
     new Tournament(
-      '05. Mai 18'
+      '05. Mai 2018'
       , 'FIFA 18 Blick eSport Cup'
       , 'fifa'
       , 'Congress Center Basel'
       , 'Am 5. Mai steigt in Basel mit dem BLICK eSports Cup das grösste FIFA-Turnier der Schweiz! Bis am 8. April können sich FIFA-Spieler aus der Schweiz, Deutschland und Österreich für einen von 240 Startplätzen bewerben. Im Congress Center Basel messen sich diese dann mit der absoluten eSport-Elite des deutschsprachigen Raums.'
-      , ''
+      , '../../../assets/image/turniere/05.05.2018.jpg'
     ),
     new Tournament(
-      '21. April 18'
+      '21. April 2018'
       , 'Call of Duty WWII by GAMETURNIER'
       , 'call-of-duty'
       , 'Fehraltdorf im Heiget Huus'
       , 'Die Schlacht geht in eine weitere Runde. Macht euer Squad bereit für die Revanche! Wer wird das Battle in Fehraltorf Zürich für sich entscheiden? Mit unserem Neuen Call of Duty Team werden wir unseren Titel verteidigen, also seid live dabei auf Twitch oder direkt in Fehraltdorf.'
-      , ''
+      , '../../../assets/image/turniere/21.04.2018.jpeg'
     ),
     new Tournament(
-      '14. April 18'
+      '14. April 2018'
       , 'FIFA Offline Qualifikation'
       , 'fifa'
       , 'MediaMarkt Oftringen'
       , 'Um unsere Organisatzion Zoorig eSport im Ramen der Fantay Basel an der FIFA 18 Meisterschaft zu vertretten, werden unsere FIFA-Stars an der Offline Qualifikation im MediaMarkt Oftringen am Start sein.'
-      , ''
+      , '../../../assets/image/turniere/14.04.2018.jpg'
     ),
     new Tournament(
-      '06. April 18'
+      '06. April 2018'
       , 'Fortnite Battle Royal Turnier'
       , 'fortnite'
       , 'eParadise Zürich'
       , 'Mit dem Ziel unsere #ZoorigFamily zu erweitern stossen wir nun auch in das Hype-Spiel Fortnite Battle Royal vor.  Mit 2 Teilnehmern werden wir zum Start alles geben, um auch in der SESL Fuss zu fassen.'
-      , ''
+      , '../../../assets/image/turniere/06.04.2018.jpeg'
     ),
     new Tournament(
-      '01. April 18'
+      '01. April 2018'
       , 'FIFA 18 1vs1 eSport Cup'
       , 'fifa'
       , 'eParadise Zürich'
       , 'Erneut treffen wir uns bei unserem Partner im eParadise in Zürich für ein Turnier unserer FIFA-Stars. Mit Freude und Spass tretten wir an, doch mit dem Sieg fest im Blick legen wir richtig los.'
-      , ''
+      , '../../../assets/image/turniere/01.04.2018.png'
     ),
     new Tournament(
-      '09. - 11. März 18'
+      '09. - 11. März 2018'
       , 'Call of Duty World League'
       , 'call-of-duty'
       , 'CWL Atlanta'
       , `Wir gratulieren dem Team von Zoorig eSport um PrimeeBOT, Kivi, TPiece und PieroCOD Ihrer grossartigen Leistung an der CWL Atlanta zum Platz 49. \n
                     \n
                     Das gesamte Organisatzion ist Stolz vom ersten auftreten bei der Call of Duty World League und bedankt sich bei allen Unterstützern.`
-      , ''
+      , '../../../assets/image/turniere/09._11.03.2018.jpeg'
     ),
     new Tournament(
-      '03. März 18'
+      '03. März 2018'
       , 'Call of Duty WWII by GAMETURNIER'
       , 'call-of-duty'
       , 'Fehraltdorf im Heiget Huus'
@@ -231,7 +231,7 @@ export class TournamentsComponent implements OnInit {
                    3. Platz: Zoorig Bodensee
 
                    Wir werden wieder am GAMETURNIER im Heiget Huus in Fehraltdorf teilnehmen und freuen uns wieder auf ein geniales Turnier mit guten Gegnern und werden viel Spass haben.`
-      , ''
+      , '../../../assets/image/turniere/03.03.2018.jpg'
     ),
     new Tournament(
       '03. Februar 18'
@@ -239,7 +239,7 @@ export class TournamentsComponent implements OnInit {
       , 'fifa'
       , 'eParadise Zürich'
       , 'Mit grosser Freude begehen wir bei unserem Sponsor und Partner eParadise am FIFA 18 eSport Cup antreten zu dürfen. Dies wird ausserdem unser erstes FIFA 18 Turnier überhaupt als eSport Organisation sein und dabei geben wir alles.'
-      , ''
+      , '../../../assets/image/turniere/03.03.2018(2).jpg'
     )
   ];
 

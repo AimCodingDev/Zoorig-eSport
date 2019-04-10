@@ -14,7 +14,7 @@ $fontColorDefault: #ffd613
   flex-direction: row
 
   .asideLeft,
-  .asideRight
+  router-outlet
     display: flex
     width: 22%
 
@@ -23,27 +23,25 @@ $fontColorDefault: #ffd613
     width: 56%
 
 
-  @media screen and (max-width: 1250px)
-    #main
+@media screen and (max-width: 1250px)
+  #main
 
-      .asideRight
-        display: none
+    router-outlet
+      width: 250px
+
+
+  @media screen and (max-width: 1100px)
+    #main
+      width: 100%
 
       .main
-        width: 68%
-
-    @media screen and (max-width: 1100px)
-      #main
+        width: calc(78% - 103px)
         min-width: 400px
 
-        .asideRight
-          width: 0
+      .asideLeft
+        width: 103px
 
-        .asideLeft
-          width: 103px
+      router-outlet
+        width: 250px
 
-        .main
-          width: calc(100% - 103px)
-
-        .backgroundImageNewLogo
-          width: 1000px
+    @media screen and (max-width: 700px)

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact',
@@ -13,5 +15,4 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

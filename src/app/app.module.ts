@@ -17,11 +17,13 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { GameComponent } from './games/game/game.component';
 import { MainComponent } from './about-us/main/main.component';
 import { SocialMediaComponent } from './about-us/social-media/social-media.component';
-import { TwitterComponent } from './about-us/social-media/twitter/twitter.component';
+import { TwitterComponent } from './about-us/social-media/feeds/twitter/twitter.component';
 import { NgxTwitterTimelineModule} from 'ngx-twitter-timeline';
 import { TournamentsComponent } from './tournaments/tournaments.component';
 import { ContactComponent } from './contact/contact.component';
 import {FormsModule} from '@angular/forms';
+import { InstagrammComponent } from './about-us/social-media/feeds/instagramm/instagramm.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import {FormsModule} from '@angular/forms';
     TwitterComponent,
     TournamentsComponent,
     ContactComponent,
+    InstagrammComponent,
+    SponsorsComponent,
   ],
   imports: [
     BrowserModule,

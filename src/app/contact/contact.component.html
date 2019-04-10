@@ -1,40 +1,99 @@
-<br>
-<h3>Kontakt</h3>
-<hr><br>
-<form [ngModel]="">
-  <div class="ng-group">
-    <label for="firstName">Vorname<span style="color: red">*</span></label>
-    <input required minlength="3" maxlength="100" ngModel name="firstName" #firstName="ngModel"
-           (change)="log(firstName)" type="text" id="firstName" class="form-control">
-    <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
-      <div *ngIf="firstName.errors.required">Dies ist ein Pflichtfeld</div>
-      <div *ngIf="firstName.errors.maxlength">Die Maximallänge beträgt 100 Zeichen</div>
-      <div *ngIf="firstName.errors.minlength">Die Mindestlänge beträgt 3 Zeichen</div>
-    </div>
-  </div>
-  <div class="ng-group">
-    <label for="lastName">Nachname</label>
-    <input ngModel name="lastName" #lastName="ngModel" (change)="log(lastName)" type="text" id="lastName"
-           class="form-control">
-  </div>
-  <div class="ng-group">
-    <label for="mail">E-Mail<span style="color: red">*</span></label>
-    <input required ngModel name="mail" #mail="ngModel" (change)="log(mail)" type="email" id="mail"
-           class="form-control">
-    <div class="alert alert-danger" *ngIf="mail.touched && !mail.valid">
-      <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
-        <div *ngIf="mail.errors.required">Dies ist ein Pflichtfeld</div>
+<div id="main">
+  <div class="contactFormular">
+    <p>Kontakt</p>
+    <hr>
+    <form>
+      <div class="ng-group">
+        <label for="firstName">Vorname<span style="color: red">*</span></label>
+        <input
+          required
+          minlength="3"
+          maxlength="100"
+          ngModel
+          name="firstName"
+          #firstName="ngModel"
+          (change)="log(firstName)"
+          type="text"
+          id="firstName"
+          class="form-control">
+        <div *ngIf="firstName.touched && !firstName.valid" class="alert alert-danger">
+          <div *ngIf="firstName.errors.required">
+            Dies ist ein Pflichtfeld
+          </div>
+          <div *ngIf="firstName.errors.minlength">
+            Die Mindestlänge beträgt {{ firstName.errors.minlength.requiredLength }} Zeichen
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="ng-group">
+        <label for="lastName">Nachname</label>
+        <input
+          ngModel
+          name="lastName"
+          #lastName="ngModel"
+          (change)="log(lastName)"
+          type="text" id="lastName"
+          class="form-control">
+      </div>
+      <div class="ng-group">
+        <label for="mail">
+          E-Mail
+          <span style="color: red">*</span>
+        </label>
+        <input
+          required
+          name="mail"
+          pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+          ngModel
+          #mail="ngModel"
+          (change)="log(mail)"
+          type="text"
+          id="mail"
+          class="form-control">
+        <div class="alert alert-danger" *ngIf="mail.touched && !mail.valid">
+          <div *ngIf="mail.errors.required">
+            Dies ist ein Pflichtfeld
+          </div>
+          <div *ngIf="mail.errors.pattern">
+            Bitte eine korrekte E-Mail Adresse eingeben
+          </div>
+        </div>
+      </div>
+      <div class="ng-group">
+        <label for="comment">
+          Nachricht
+          <span style="color: red">*</span>
+        </label>
+        <span class="actuelLength" *ngIf="comment.touched && comment.value">
+      {{ comment.errors.minlength.actualLength }}/100
+    </span>
+        <textarea
+          required
+          minlength="100"
+          ngModel name="comment"
+          #comment="ngModel"
+          (change)="log(comment)"
+          cols="30"
+          rows="10"
+          id="comment"
+          class="form-control">
+    </textarea>
+      </div>
+      <div *ngIf="comment.touched && !comment.valid" class="alert alert-danger" >
+        <div *ngIf="comment.errors.required">
+          Dies ist ein Pflichtfeld
+        </div>
+        <div *ngIf="comment.errors.minlength">
+          Die Mindestlänge beträgt {{ comment.errors.minlength.requiredLength }} Zeichen
+        </div>
+      </div>
+      <br>
+      <div class="buttons">
+        <button class="btn btn-success">
+            Senden
+        </button>
+      </div>
+      <br>
+    </form>
   </div>
-  <div class="ng-group">
-    <label for="comment">Nachricht<span style="color: red">*</span></label>
-    <textarea cols="30" rows="10" id="comment" class="form-control"></textarea>
-  </div>
-  <br>
-  <div class="buttons">
-    <button class="btn btn-success">Senden</button>
-    <button class="btn btn-danger">Eingaben löschen</button>
-  </div>
-  <br>
-</form>
+</div>

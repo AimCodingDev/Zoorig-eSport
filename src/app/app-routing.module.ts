@@ -9,8 +9,11 @@ import {FifaComponent} from './games/fifa/fifa.component';
 import {SuperSmashBrosComponent} from './games/super-smash-bros/super-smash-bros.component';
 import {FortniteComponent} from './games/fortnite/fortnite.component';
 import {GameComponent} from './games/game/game.component';
-import {TwitterComponent} from './about-us/social-media/twitter/twitter.component';
+import {TwitterComponent} from './about-us/social-media/feeds/twitter/twitter.component';
 import {TournamentsComponent} from './tournaments/tournaments.component';
+import {ContactComponent} from './contact/contact.component';
+import {InstagrammComponent} from './about-us/social-media/feeds/instagramm/instagramm.component';
+import {SponsorsComponent} from './sponsors/sponsors.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,8 +21,9 @@ const routes: Routes = [
   {path: 'about-us',
     component: AboutUsComponent,
     children: [
-      {path: '', component: AboutUsComponent},
+      {path: '', component: ContactComponent},
       {path: 'twitter', component: TwitterComponent },
+      {path: 'instagram', component: InstagrammComponent}
     ]},
   {path: 'tournaments', component: TournamentsComponent},
   {path: 'games',
@@ -33,6 +37,7 @@ const routes: Routes = [
       {path: 'fortnite', component: FortniteComponent},
     ]
   },
+  {path: 'sponsors', component: SponsorsComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 

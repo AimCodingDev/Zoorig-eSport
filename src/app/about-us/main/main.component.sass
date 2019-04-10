@@ -19,12 +19,15 @@
 
 
     h1
-      font-size: 50px
+      display: flex
+      font-size: 40px
 
     .description
+      display: flex
       font-size: $fontSizeHeadingSmall
 
     .line
+      display: flex
       width: 90%
       border: solid 4px $fontColorDefault
       border-radius: 40%
@@ -32,13 +35,13 @@
 
 @media screen and (max-width: 1250px)
   #main
-    width: 68%
+    width: 100%
 
     .header
-      width: 100%
+      width: 68%
 
       h1
-        font-size: 42px
+        font-size: 32px
 
       .description
         font-size: 16px
@@ -51,12 +54,12 @@
         width: 100%
 
         h1
-          font-size: 36px
+          font-size: 24px
 
         .description
           font-size: 14px
 
-    @media screen and (max-width: 800px)
+    @media screen and (max-width: 900px)
       #main
         width: calc(100% - 103px)
 
